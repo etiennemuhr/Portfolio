@@ -3,6 +3,7 @@
     url("assets/e2856beef15f9df91ba939ee2b7986cc.png");
   // background-image: url("assets/computer-1209641_1920.jpg");
   height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -15,18 +16,23 @@
   font-family: "Pacifico", cursive;
   color: white;
   font-size: 90px;
+  text-align: center;
 }
 
 .h2__Home {
   font-family: "Pacifico", cursive;
   color: white;
   font-size: 55px;
+  text-align: center;
 }
 
 .buttonContainer__Home {
-  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
   margin-top: 10px;
-  height: 115px;
 }
 
 .button__Home {
@@ -67,4 +73,34 @@
 .button__Home:hover {
   width: 400px;
   height: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .h1__Home {
+    font-size: 50px;
+  }
+
+  .h2__Home {
+    font-size: 30px;
+  }
+
+  .button__Home {
+    font-size: 20px;
+    padding: 10px;
+    margin: 15px;
+    width: 250px;
+    height: 50px;
+  }
+  .buttonContainer__Home {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .h1__Home {
+    font-size: 40px;
+  }
+  .h2__Home {
+    font-size: 18px;
+  }
 }

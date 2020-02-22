@@ -27,9 +27,24 @@
   cursor: pointer;
 }
 
+.backButtonIcon__Projects:hover {
+  fill: white;
+}
+
+.bgSvg__Projects {
+  position: absolute;
+  width: 100%;
+  top: -240px;
+  left: 0px;
+}
+
 .navLink__Projects {
   font-size: 32px;
   margin-left: 25px;
+}
+
+.navLink__Projects:hover {
+  color: white;
 }
 
 .h1__Projects {
@@ -37,7 +52,7 @@
   text-align: center;
   font-size: 80px;
   text-transform: uppercase;
-  color: rgb(4, 0, 255);
+  color: #0099ff;
   margin-bottom: 25px;
 }
 

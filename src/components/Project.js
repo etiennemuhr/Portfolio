@@ -44,7 +44,7 @@ const Project = props => {
           Live Version
         </button>
         {props.noGithub ? (
-          <button className="btn__Project" disabled>
+          <button className="btn__Project disabled__Project" disabled>
             Github nicht verfügbar
           </button>
         ) : (

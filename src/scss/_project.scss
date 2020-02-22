@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #009688;
+  background-color: #0099ff;
   width: 300px;
   height: 500px;
   margin: 25px;
@@ -17,6 +17,7 @@
   font-size: 28px;
   margin: 10px;
   margin-top: 20px;
+  // color: #e6eeee;
 }
 
 .projectImage__Project {
@@ -33,6 +34,7 @@
 .projectImage__Project:hover {
   width: 800px;
   z-index: 1;
+  cursor: zoom-in;
 }
 
 .projectImage__Project:hover ~ .tecsWrapper__Project,
@@ -55,6 +57,7 @@
   margin-top: 10px;
   opacity: 1;
   transition-delay: 0.5s;
+  // color: #e6eeee;
 }
 
 .singelTec__Project {
@@ -109,6 +112,14 @@
 .githubBtnContainer__Project {
   width: 100%;
   display: flex;
+}
+
+.disabled__Project {
+  cursor: not-allowed;
+}
+
+.disabled__Project:hover {
+  opacity: 100%;
 }
 
 @media screen and (max-width: 800px) {
