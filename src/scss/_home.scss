@@ -1,0 +1,70 @@
+.backgroundImage__Home {
+  background: linear-gradient(rgba(27, 27, 27, 0.692), rgba(0, 0, 0, 0.705)),
+    url("assets/e2856beef15f9df91ba939ee2b7986cc.png");
+  // background-image: url("assets/computer-1209641_1920.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h1__Home {
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 90px;
+}
+
+.h2__Home {
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 55px;
+}
+
+.buttonContainer__Home {
+  height: 15px;
+  margin-top: 10px;
+  height: 115px;
+}
+
+.button__Home {
+  font-size: 40px;
+  padding: 10px;
+  margin: 15px;
+  background-color: transparent;
+  border-radius: 50px;
+  color: white;
+  outline: none;
+  width: 350px;
+  height: 80px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button__Home::before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 10%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-out;
+}
+
+.button__Home:hover::before {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.685);
+  z-index: -1;
+}
+
+.button__Home:hover {
+  width: 400px;
+  height: 100px;
+}

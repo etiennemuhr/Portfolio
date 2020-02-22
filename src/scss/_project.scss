@@ -1,0 +1,130 @@
+.wrapper__Project {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #009688;
+  width: 300px;
+  height: 500px;
+  margin: 25px;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 14px 5px -6px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 10px 14px 5px -6px rgba(0, 0, 0, 0.21);
+  box-shadow: 10px 14px 5px -6px rgba(0, 0, 0, 0.21);
+}
+
+.projectTitle__Project {
+  font-size: 28px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.projectImage__Project {
+  width: 250px;
+  margin: 10px 0px;
+  -webkit-box-shadow: 9px 10px 5px -5px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 9px 10px 5px -5px rgba(0, 0, 0, 0.63);
+  box-shadow: 9px 10px 5px -5px rgba(0, 0, 0, 0.63);
+  opacity: 1;
+  transition: width 0.5s ease-out;
+  position: relative;
+}
+
+.projectImage__Project:hover {
+  width: 800px;
+  z-index: 1;
+}
+
+.projectImage__Project:hover ~ .tecsWrapper__Project,
+.projectImage__Project:hover ~ h3 {
+  opacity: 0;
+  transition-delay: 0ms;
+}
+
+.projectImage__Project:hover ~ .tecsWrapper__Project ~ .btnContainer__Project {
+  opacity: 0;
+  transition-delay: 0ms;
+}
+
+.tecsh3__Project {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.tecsWrapper__Project {
+  margin-top: 10px;
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.singelTec__Project {
+  text-align: center;
+}
+
+.frontAndBackendContainer__Project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  text-align: center;
+}
+
+.btnContainer__Project {
+  position: absolute;
+  width: 250px;
+  bottom: 25px;
+  transition-delay: 0.3s;
+}
+
+.btn__Project {
+  text-transform: uppercase;
+  background-color: azure;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  margin: 15px 0px;
+  border-color: azure;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn__Project:hover {
+  opacity: 90%;
+}
+
+.githubLogo__Project {
+  width: 20px;
+}
+
+.githubText__Project {
+  align-self: center;
+  margin-left: 6px;
+}
+
+.btnInnerContainer__Project {
+  display: flex;
+  justify-content: center;
+}
+
+.githubBtnContainer__Project {
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .projectImage__Project:hover {
+    width: 250px;
+  }
+  .projectImage__Project:hover ~ .tecsWrapper__Project,
+  .projectImage__Project:hover ~ h3 {
+    opacity: 1;
+    transition-delay: 0ms;
+  }
+
+  .projectImage__Project:hover
+    ~ .tecsWrapper__Project
+    ~ .btnContainer__Project {
+    opacity: 1;
+    transition-delay: 0ms;
+  }
+}
