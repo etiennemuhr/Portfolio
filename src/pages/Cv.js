@@ -135,8 +135,9 @@ const Cv = props => {
           </h3>
           <h4>Progammieren</h4>
           <p>HTML/CSS</p>
-          <p>JavaScript (TypeScript, React, React Native, VueJS, NodeJS)</p>
+          <p>JavaScript (React, React Native, NodeJS, VueJS)</p>
           <p>Linux</p>
+          <p>Docker</p>
           <h4 style={{ marginTop: "10px" }}>Weiter Kompetenzen:</h4>
           <p>Microsoft Office</p>
           <p>Sehr gute Kommunikation,- und Teamfähigkeiten</p>

@@ -162,23 +162,27 @@
   -webkit-transition: width 0.5s ease-out;
   transition: width 0.5s ease-out;
   position: relative;
-}
-
-.projectImage__Project:hover {
-  width: 800px;
-  z-index: 1;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
 
-.projectImage__Project:hover ~ .tecsWrapper__Project,
-.projectImage__Project:hover ~ h3 {
+.projectImageOpen__Project {
+  width: 800px;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+.projectImageOpen__Project ~ .tecsWrapper__Project,
+.projectImageOpen__Project ~ h3 {
   opacity: 0;
   -webkit-transition-delay: 0ms;
           transition-delay: 0ms;
 }
 
-.projectImage__Project:hover ~ .tecsWrapper__Project ~ .btnContainer__Project {
+.projectImageOpen__Project ~ .tecsWrapper__Project ~ .btnContainer__Project {
   opacity: 0;
   -webkit-transition-delay: 0ms;
           transition-delay: 0ms;
@@ -332,6 +336,9 @@
   position: absolute;
   top: 5px;
   left: 5px;
+}
+
+.backButtonIcon__Projects {
   cursor: pointer;
 }
 
@@ -349,6 +356,7 @@
 .navLink__Projects {
   font-size: 32px;
   margin-left: 25px;
+  cursor: pointer;
 }
 
 .navLink__Projects:hover {

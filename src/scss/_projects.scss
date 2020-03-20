@@ -24,6 +24,9 @@
   position: absolute;
   top: 5px;
   left: 5px;
+}
+
+.backButtonIcon__Projects {
   cursor: pointer;
 }
 
@@ -41,6 +44,7 @@
 .navLink__Projects {
   font-size: 32px;
   margin-left: 25px;
+  cursor: pointer;
 }
 
 .navLink__Projects:hover {

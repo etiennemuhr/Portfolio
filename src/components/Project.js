@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Project = props => {
   return (
     <div className="wrapper__Project">
       <h3 className="projectTitle__Project">{props.title}</h3>
 
-      <img src={props.img} alt="project" className="projectImage__Project" />
+      <img
+        id={props.id}
+        src={props.img}
+        alt="project"
+        className={
+          props.imageState === props.id
+            ? "projectImageOpen__Project"
+            : "projectImage__Project"
+        }
+        onClick={test => props.handleImage(test.target.id)}
+      />
 
       <h3 className="tecsh3__Project">Verwendete Technologie</h3>
       <div className="tecsWrapper__Project">

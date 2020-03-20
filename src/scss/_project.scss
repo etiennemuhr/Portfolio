@@ -29,21 +29,23 @@
   opacity: 1;
   transition: width 0.5s ease-out;
   position: relative;
-}
-
-.projectImage__Project:hover {
-  width: 800px;
-  z-index: 1;
   cursor: zoom-in;
 }
 
-.projectImage__Project:hover ~ .tecsWrapper__Project,
-.projectImage__Project:hover ~ h3 {
+.projectImageOpen__Project {
+  width: 800px;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+  cursor: zoom-out;
+}
+
+.projectImageOpen__Project ~ .tecsWrapper__Project,
+.projectImageOpen__Project ~ h3 {
   opacity: 0;
   transition-delay: 0ms;
 }
 
-.projectImage__Project:hover ~ .tecsWrapper__Project ~ .btnContainer__Project {
+.projectImageOpen__Project ~ .tecsWrapper__Project ~ .btnContainer__Project {
   opacity: 0;
   transition-delay: 0ms;
 }
