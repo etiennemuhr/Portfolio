@@ -55,6 +55,7 @@ const Projects = props => {
           img={dashboard}
           tecs={["React", "MaterialUI"]}
           tecs2={["NodeJS", "MongoDB"]}
+          projectLink="https://www.dashboard.etiennemuhr.at/"
           imageState={image}
           handleImage={handleImage}
         ></Project>
@@ -63,6 +64,7 @@ const Projects = props => {
           title="Portfolio"
           img={portfolio}
           tecs={["React", "SCSS"]}
+          projectLink="https://www.etiennemuhr.at/"
           imageState={image}
           handleImage={handleImage}
         ></Project>
@@ -73,6 +75,7 @@ const Projects = props => {
           noGithub
           history={props.history}
           tecs={["HTML", "CSS", "Bootstrap"]}
+          projectLink="https://www.ah-immobilien.at/"
           imageState={image}
           handleImage={handleImage}
         ></Project>

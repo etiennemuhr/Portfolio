@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Project = props => {
   return (
@@ -49,7 +49,7 @@ const Project = props => {
       <div className="btnContainer__Project">
         <button
           className="btn__Project"
-          onClick={() => window.open("https://www.ah-immobilien.at/", "_blank")}
+          onClick={() => window.open(`${props.projectLink}`, "_blank")}
         >
           Live Version
         </button>

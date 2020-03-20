@@ -85,7 +85,7 @@
 
   .girdJobs__Cv {
     text-align: left;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 150px 150px; 
     gap: 5px;
     padding: 10px;
   }
@@ -100,5 +100,6 @@
   }
 
   .internshipContainer__Cv {
+    margin-bottom: 250px;
   }
 }

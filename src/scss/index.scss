@@ -2,9 +2,10 @@
 @import "./_project.scss";
 @import "./_projects.scss";
 @import "./_cv.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap'); 
 
 * {
   margin: 0;
-  padding: 0;
-  font-family: "Pacifico", cursive;
+  padding: 0; 
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
 }
