@@ -56,6 +56,7 @@ const Projects = props => {
           tecs={["React", "MaterialUI"]}
           tecs2={["NodeJS", "MongoDB"]}
           projectLink="https://www.dashboard.etiennemuhr.at/"
+          gitLink="https://github.com/etiennemuhr/Dashboard"
           imageState={image}
           handleImage={handleImage}
         ></Project>
@@ -65,6 +66,7 @@ const Projects = props => {
           img={portfolio}
           tecs={["React", "SCSS"]}
           projectLink="https://www.etiennemuhr.at/"
+          gitLink="https://github.com/etiennemuhr/Portfolio"
           imageState={image}
           handleImage={handleImage}
         ></Project>

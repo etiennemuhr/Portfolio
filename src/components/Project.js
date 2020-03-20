@@ -61,7 +61,7 @@ const Project = props => {
           <div className="githubBtnContainer__Project">
             <button
               className="btn__Project"
-              onClick={() => window.open("https://www.github.com/", "_blank")}
+              onClick={() => window.open(`${props.gitLink}`, "_blank")}
             >
               <div className="btnInnerContainer__Project">
                 {/* prettier-ignore-start */}
